@@ -1,4 +1,4 @@
-# docker-symfony-postgres
+# docker-symfony-php-nginx-postgres
 
 ## Goal
 When I first started to teach myself **docker** I couldn't easily find a repository using the somewhat rare combo stack: **PHP/Symfony**, **Nginx** and **Postgres**.
