@@ -29,7 +29,7 @@ Steps to acomplish our goal:
 2. Clone this repository using `git clone` to directory `app-bundle` and set it as the current directory:
 
     ```
-    /your/codebase/$ git clone docker-symfony-php-nginx-postgres.git app-bundle
+    /your/codebase/$ git clone https://github.com/rocharv/docker-symfony-php-nginx-postgres.git app-bundle
     /your/codebase/$ cd app-bundle
     /your/codebase/app-bundle$
     ```
