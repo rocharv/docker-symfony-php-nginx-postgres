@@ -29,34 +29,34 @@ Steps to acomplish our goal:
 2. Clone this repository using `git clone` to directory `app-bundle` and set it as the current directory:
 
     ```
-    /your/codebase/$ git clone https://github.com/rocharv/docker-symfony-php-nginx-postgres.git app-bundle
-    /your/codebase/$ cd app-bundle
-    /your/codebase/app-bundle$
+    /your/path$ git clone https://github.com/rocharv/docker-symfony-php-nginx-postgres.git app-bundle
+    /your/path$ cd app-bundle
+    /your/pathapp-bundle$
     ```
 
 3. In order to persist the **Postgres** database in your host machine, you must
 create the `db` directory for it:
 
     ```
-    /your/codebase/app-bundle$ mkdir db
+    /your/pathapp-bundle$ mkdir db
     ```
 
 5. In order to persist the configuration of **pgAdmin 4** web application
 in your host machine, you must create the `pgadmin` directory for it:
 
     ```
-    /your/codebase/app-bundle$ mkdir pgadmin
+    /your/pathapp-bundle$ mkdir pgadmin
     ```
 
     Don't forget to change this directory ownership to the standard **user** and **group** of **pgAdmin**:
 
     ```
-    /your/codebase/app-bundle$ sudo chown -R 5050:5050 pgadmin
+    /your/pathapp-bundle$ sudo chown -R 5050:5050 pgadmin
     ```
 
 5. Following Symfony's standards, the `index.php` should be in:
 
-    `/your/codebase/app/public/index.php`
+    `/your/pathapp/public/index.php`
 
     > **Note:** I have created an `index.php` file with `phpinfo()` in it so that you can
 also check if all modules you need are there.
@@ -64,7 +64,7 @@ also check if all modules you need are there.
 6. If you follow every previous step, your directory structure will look like this:
 
     ```
-    /your/codebase/app-bundle$ tree
+    /your/pathapp-bundle$ tree
     .
     ├── app\
     │   └── public\
@@ -109,8 +109,8 @@ also check if all modules you need are there.
 7. Now it's time to run your containers. Use `docker-compose` to launch it from `docker` directory:
 
     ```
-    /your/codebase/app-bundle$ cd docker
-    /your/codebase/app-bundle/docker$ docker-compose up -d
+    /your/pathapp-bundle$ cd docker
+    /your/pathapp-bundle/docker$ docker-compose up -d
     ```
 
 
@@ -140,7 +140,7 @@ You can create a new **Symfony** App inside the `app` directory. Don't forget th
 If you don't have `composer` nor `symfony` installed in your host machine, you can execute `/bin/bash` from `php_server` container. In order to show you that, see how easy is to install **Symfony's Demo App**:
 
 ```
-/your/codebase/app-bundle/docker$ docker exec -it php_server /bin/bash
+/your/pathapp-bundle/docker$ docker exec -it php_server /bin/bash
 root@850e7a0bd345:/var/www/app# rm -R public
 root@850e7a0bd345:/var/www/app# git config --global user.name "User Name"
 root@850e7a0bd345:/var/www/app# git config --global user.email "user@domain.com"
@@ -161,7 +161,7 @@ Browsing again [http://localhost:8080](http://localhost:8080) should result in:
 Tired of programming? Go grab a **Brazilian coffee** for yourself, it's good for you! But before doing that, shut down your **docker** containers:
 
 ```
-/your/codebase/app-bundle/docker$ docker-compose down
+/your/pathapp-bundle/docker$ docker-compose down
 ```
     
 ## Last thoughts
