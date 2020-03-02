@@ -101,7 +101,7 @@ also check if all modules you need are there.
     ```
 
     > **Note 1:**
-    The `app` directory (where your **Symfony** source code shall live) is used by `docker-compose.yml`, php_service's `Dockerfile` and nginx's `default.conf`. If you want to use another name, you should go ahead and edit these files after step `2`.
+    The `app` directory (where your **Symfony** source code shall live) is used by `docker-compose.yml`, php_service's `Dockerfile` and nginx's `default.conf`. If you want to use another name, you should do it now and edit these files before next step. However, if you are not familiar with **docker** and configurations files, I recommend you postpone these changes until you see the whole environment working.
 
     > **Note 2:**
     In the near future we will be creating a simpler way to change these setups through environment varibles and bash scripts.
