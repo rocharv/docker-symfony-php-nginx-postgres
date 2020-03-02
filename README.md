@@ -135,7 +135,7 @@ also check if all modules you need are there.
 
 ## Symfony's Demo App
 
-You can create a new **Symfony** App inside the `app` directory. Don't forget that it must be empty (if you follow every step from the beginning, you will have to delete its content, the 'public' directory that contains the `index.php` file). We will also need to set **git** user's name and email.
+You can create a new **Symfony** App inside the `app` directory. Don't forget that it must be empty (if you follow every step from the beginning, you will have to delete its content which is the `public` directory that contains the `index.php` file). We will also need to set **git** user's name and email.
 
 If you don't have `composer` nor `symfony` installed in your host machine, you can execute `/bin/bash` from `php_server` container. In order to show you that, see how easy is to install **Symfony's Demo App**:
 
