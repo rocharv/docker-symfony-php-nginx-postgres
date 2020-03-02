@@ -58,7 +58,7 @@ in your host machine, you must create the `pgadmin` directory for it:
 
     `/your/codebase/app/public/index.php`
 
-    > **Note:** I created an `index.php` file with `phpinfo()` in it so that you can
+    > **Note:** I have created an `index.php` file with `phpinfo()` in it so that you can
 also check if all modules you need are there.
 
 6. If you follow every previous step, your directory structure will look like this:
